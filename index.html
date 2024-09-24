@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Images, Video, Favicons, &amp; Tables</title>
+        <meta name="author" content="Khanh Tran">
+        <meta name="description" content="Practice with images, video, svgs, favicons, and tables for G.I.T. 215">
+        
+        <!-- A FAVICON -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+        <!-- GOOGLE FONTS LINKS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&display=swap" rel="stylesheet">
+
+        <!-- CSS STYLESHEET -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" aria-label="go to the home page">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!-- SVG code here -->
+                </svg>
+            </a>
+            <h1>Images, Video, Favicons, &amp; Tables</h1>
+            <nav>
+                <ul>
+                    <li><a href="#images">Images</a></li>
+                    <li><a href="#video">Video</a></li>
+                    <li><a href="#favicon">Favicons</a></li>
+                    <li><a href="#svg">SVG</a></li>
+                    <li><a href="#table">Tables</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>Follow along as we learn about using images in HTML, adding a favicon to a website, adding SVGs to HTML, adding a video to a web page, and creating a table with HTML.</p>
+
+            <section id="images">
+                <h2>Adding Images to Your HTML</h2>
+                <p>There are a couple of reasons for adding images to your HTML...</p>
+
+                <section>
+                    <h3><span>&#10033;&nbsp;</span> Adding Decorative Images to HTML</h3>
+                    <p>As explained above, a decorative image...</p>
+
+                    <!-- Adding decorative image -->
+                    <img src="images/square-red-blue.jpg" alt="" width="300" height="300">
+
+                    <p class="credit">Photo by <a href="https://unsplash.com/@usgs">USGS</a> on <a href="https://unsplash.com/wallpapers/cool/abstract">Unsplash</a></p>
+                </section>
+
+                <section>
+                    <h3><span>&#10033;&nbsp;</span> Adding Images as Content is HTML</h3>
+                    <p>For images that are content...</p>
+
+                    <!-- Adding content image -->
+                    <img src="images/memphis-recording-service.jpg" alt="a neon sign hanging on a dark wall that says memphis recording service" width="400" height="400">
+
+                    <p class="credit">Photo by <a href="https://unsplash.com/es/@uconrad">Uwe Conrad</a> on <a href="https://unsplash.com/photos/zPnHgxeu9LI">Unsplash</a></p>
+                </section>
+            </section>
+
+            <section id="video">
+                <h2>Adding Video to Your HTML</h2>
+                <p>Many sites today use video...</p>
+
+                <section>
+                    <h3><span>&#10033;&nbsp;</span> Using HTML5 to Add a Video</h3>
+                    <p>The video that we will embed below...</p>
+                    
+                    <!-- Adding HTML5 video -->
+                    <video controls width="640">
+                        <source src="videos/your-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <a href="https://www.pexels.com/video/laptop-use-as-controller-for-a-modern-sound-system-3134599/" class="credit">Video by Caleb Oquendo</a>
+                </section>
+
+                <section>
+                    <h3><span>&#10033;&nbsp;</span> Adding Video From YouTube</h3>
+                    <p>Adding a video from YouTube...</p>
+                    <iframe width="425" height="240" src="https://www.youtube.com/embed/k9DZp16uNQk" title="YouTube video player" allowfullscreen></iframe>
+                </section>
+            </section>
+
+            <section id="favicon">
+                <h2>Adding a Favicon to Your Web Page</h2>
+                <p>A favicon serves a lot of purposes...</p>
+            </section>
+
+            <section id="svg">
+                <h2>Using SVGs in HTML</h2>
+                <p>There are a few ways that you can add an SVG...</p>
+                <footer>
+                    <p>For the icons below...</p>
+                    <section>
+                        <h2>Follow&nbsp;Us&nbsp;on Social&nbsp;Media</h2>
+
+                        <a href="#" aria-label="find us on facebook">
+                            <!-- Facebook SVG Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M18 2h-12a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-12a2 2 0 0 0-2-2z" />
+                                <path d="M12 2v10m0 0l3 3m-3-3l-3 3" />
+                            </svg>
+                        </a>
+                        
+                        <a href="#" aria-label="find us on instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="4" y="4" width="16" height="16" rx="4" />
+                                <circle cx="12" cy="12" r="3" />
+                                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                            </svg>
+                        </a>
+
+                        <a href="#" aria-label="find us on twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7
